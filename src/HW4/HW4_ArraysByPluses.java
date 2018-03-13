@@ -8,16 +8,16 @@ public class HW4_ArraysByPluses {
 	
 	public static void main(String[] args) {
 
-		int hi = vvod ("Высота");
-		int le = vvod ("Ширина");
+		int hi = vvod ("Height");
+		int le = vvod ("Width");
 		
-		System.out.println ("Высота будет " + hi + " Ширина будет - " + le);
+		System.out.println ("Height is " + hi + "; Width is - " + le);
 				
 		raspechatka ( hi,  le);
 	}	
 
 	
-// Распечатка массива	
+// Printing array	
 	
 	static void raspechatka (int hi, int le) {
 		
@@ -35,13 +35,13 @@ public class HW4_ArraysByPluses {
 	
 
 	
-// Ввод 
+// Input 
 	
 	static int vvod(String na) {
 		Scanner sc = new Scanner ( System.in);
-		System.out.print ("какая " + na + " ");		
+		System.out.print ("what " + na + " ");		
 		int vv = sc.nextInt();
-		System.out.println (na + " будет " + vv);		
+		System.out.println (na + " will be " + vv);		
 		return vv;
 	}
 	
