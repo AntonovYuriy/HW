@@ -6,6 +6,8 @@ public class GitHW4_Testing {
 		// TODO Auto-generated method stub
 
 		
+		
+		
 		System.out.println("Just to test Git repository");
 	}
 
