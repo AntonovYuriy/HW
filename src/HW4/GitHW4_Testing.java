@@ -7,7 +7,6 @@ public class GitHW4_Testing {
 
 		
 		
-		
 		System.out.println("Just to test Git repository");
 	}
 
