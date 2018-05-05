@@ -10,7 +10,6 @@
 
 package HW8;
 
-import java.awt.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
