@@ -17,13 +17,17 @@ public class DegreesInClock {
 	}
 
 	public static int degreeCounter(int hour, int minutes, int formatTime) {
-		int result = 123;
-		int hourDegree = 360 / formatTime * hour;
+		int result = 0;
+//	на циферблате только 12 часов, 24 быть не может
+		System.out.println("hour - "+ hour);
+		if (hour>12) {hour -= 12;}
+		int hourDegree = 360 / 12 * hour;
 		int minuteDegree = 360 / 60 * minutes;
+
 		if (hourDegree >= minuteDegree) {
-			result = hourDegree - minuteDegree;
-		} else {
-			result = 360 - hourDegree - minuteDegree;
+			result = hourDegree - minuteDegree; }
+		if (hourDegree < minuteDegree) {
+			result = 360 - hourDegree + minuteDegree;
 		}
 		return result;
 	}
@@ -39,7 +43,7 @@ public class DegreesInClock {
 		String[] minutesTime = allTime[1].split(" ");
 		int minutes = Integer.parseInt(minutesTime[0]);
 		System.out.println("ѕолучаетс€, что между часовой и минутной стрелкой - "
-				+ degreeCounter(hours, minutes, formatTime(inputTime)) + " градусов+");
+				+ degreeCounter(hours, minutes, formatTime(inputTime)) + " градусов");
 	}
 
 }
