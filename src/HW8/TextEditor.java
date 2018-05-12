@@ -167,10 +167,9 @@ public class TextEditor {
 
 	public static void main(String[] args) throws IOException {
 
-		// writeToFileFromConsole ();
-		// countSymbolsInFile ();
-		// showFileToConsole ();
-		// whatStringHaveMostVowels ();
+		 writeToFileFromConsole ();
+		 countSymbolsInFile ();
+		 showFileToConsole ();
 		statCounter();
 
 	}
